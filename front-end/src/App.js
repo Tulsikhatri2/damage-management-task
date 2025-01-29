@@ -1,14 +1,15 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
-import DamagePercentage from "./Components/DamagePercentage";
+import DamagePercentage from "./Pages/DamagePercentage";
+import Authentication from "./Pages/Authentication";
 
 function App() {
     return (
-        <div>
+        
           <Routes>
             <Route path="/" element={<DamagePercentage/>}/>
+            <Route path="/login" element={<Authentication/>}/>
           </Routes>
-        </div>
     );
 }
 
